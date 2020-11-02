@@ -10,7 +10,7 @@ import { ContaPagaService } from 'src/app/shared/conta-paga.service';
 })
 export class ContaPagaListComponent implements OnInit {
 
-  constructor(private servico : ContaPagaService, private toastr: ToastrService) { }
+  constructor(public servico : ContaPagaService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.servico.refreshListaContas();
