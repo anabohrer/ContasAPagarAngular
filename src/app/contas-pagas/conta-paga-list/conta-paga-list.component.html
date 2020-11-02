@@ -1,0 +1,19 @@
+<table class="table table-hover">
+    <th nowrap="nowrap">Nome</th>
+    <th nowrap="nowrap">Valor Original</th>
+    <th nowrap="nowrap">Valor Corrigido</th>
+    <th nowrap="nowrap">Vencimento</th>
+    <th nowrap="nowrap">Pagamento</th>
+    <th nowrap="nowrap">Dias de Atraso</th>
+    <tr *ngFor= "let cp of servico.list">   
+        <td (click) = "popularForm(cp)">{{cp.Nome}}</td>
+        <td (click) = "popularForm(cp)">{{cp.ValorOriginalStr}}</td>
+        <td (click) = "popularForm(cp)">{{cp.ValorCorrigido}}</td>
+        <td (click) = "popularForm(cp)">{{cp.DataVencimentoStr}}</td>
+        <td (click) = "popularForm(cp)">{{cp.DataPagamentoStr}}</td>
+        <td (click) = "popularForm(cp)">{{cp.QuantidadeDiasAtraso}}</td>
+        <td>
+            <i class="far fa-trash-alt fa-lg text-danger" (click)="onDelete(cp.Id)"></i>
+        </td>
+    </tr>
+</table>
