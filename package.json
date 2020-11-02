@@ -27,6 +27,7 @@
     "ngx-toastr": "^11.3.3",
     "rxjs": "~6.4.0",
     "serve": "^11.3.2",
+    "serve-favicon": "^2.5.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
   },
@@ -51,8 +52,8 @@
     "tslint": "~5.15.0",
     "typescript": "~3.5.3"
   },
-   "engines": {
-   "node": "10.16.3",
-   "npm": "6.9.0"
+  "engines": {
+    "node": "10.16.3",
+    "npm": "6.9.0"
   }
 }
