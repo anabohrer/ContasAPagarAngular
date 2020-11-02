@@ -11,7 +11,7 @@ import { ContaPagaService } from 'src/app/shared/conta-paga.service';
 })
 export class ContaPagaComponent implements OnInit {
 
-  constructor(private servico : ContaPagaService, private toastr: ToastrService) { }
+  constructor(public servico : ContaPagaService, private toastr: ToastrService) { }
 
   ngOnInit() {
     this.resetForm();
